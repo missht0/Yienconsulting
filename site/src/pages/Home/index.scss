@@ -1,7 +1,6 @@
-.App{
-    min-height: 100%;
-    height: 200rem;
+.home{
+    flex: 1 0 auto;
     width: var(--clr-wid);
-    background-color: var(--clr-grdt);
+    background-color: var(--clr-back);
     margin: auto;
 }

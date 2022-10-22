@@ -1,8 +1,7 @@
 footer {
-
-  margin-left: calc((var(--clr-wid) - 100vw) / 2);
+  flex: 0 0 auto;
   left: 0;
-  padding: 42px 100px;
+
 
   text-align: center;
   width: 100vw;

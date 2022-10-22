@@ -10,7 +10,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route path="/home" element={<Home />} />
+            <Route index element={<Home />} />
             {/* 配置嵌套路由*/}
             {/* 二级路由默认页面 */}
 
