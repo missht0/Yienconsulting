@@ -1,0 +1,15 @@
+footer {
+
+  margin-left: calc((var(--clr-wid) - 100vw) / 2);
+  left: 0;
+  padding: 42px 100px;
+
+  text-align: center;
+  width: 100vw;
+  min-height: 20rem;
+  background-color: var(--clr-main);
+  color: #fff;
+  font-size: 12px;
+
+
+}
