@@ -1,0 +1,71 @@
+{
+    "homePage":{
+        "navigation":["关于我们","体检项目","医疗项目","医疗美容","联系我们","体检申请流程","合作伙伴一览"],
+        "Phyexam":{
+            "title":"体检项目",
+            "list":[
+                {
+                    "title":"六大套餐",
+                    "content":"一恩三大疾病豪华体检套餐、一恩癌症综合套餐、一恩癌、脑豪华体检套餐、一恩PETCT癌症专项体检、一恩PETCT癌+脑体检"
+                },
+                {
+                    "title":"体检流程",
+                    "content":"一恩PETCT癌+脑体检"
+                }
+            ]
+        },
+        "MedicalItems":{
+            "title":"医疗项目",
+            "list":[
+                {
+                    "title":"重离子技术",
+                    "content":"一恩PETCT癌+脑体检"
+                },
+                {
+                    "title":"权威医生",
+                    "content":"一恩PETCT癌+脑体检"
+                } ,  
+                {
+                    "title":"康复中心",
+                    "content":"一恩PETCT癌+脑体检"
+                },
+                {
+                    "title":"医疗流程",
+                    "content":"一恩PETCT癌+脑体检"
+                }
+            ]
+        },
+        "beautyClinic":{
+            "title":"医疗美容",
+            "list":[
+                {
+                    "title":"xxxxx",
+                    "content":"xxxxxxxxx"
+                },
+                {
+                    "title":"xxxxx",
+                    "content":"xxxxxxxxxxxx"
+                }
+            ]
+        },
+        "bottom":{
+            "title":"一恩赴日本医疗体检咨询中心",
+            "eng":"EN.COM",
+            "address":"京ICP备15039566号",
+            "list":[
+                {
+                    "title":"联系电话: ",
+                    "number":"0081-8058975168"
+                },
+                {
+                    "title":"联系人: ",
+                    "contacts":"贾城 园"
+                },{
+                    "title":"微信号: ",
+                    "vx":"wozaidongjing"
+                }
+            ]
+        }
+    }
+
+}
