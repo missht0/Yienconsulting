@@ -6,15 +6,15 @@ import './index.scss';
 import data from './data'
 
 
-const Img02 = ({background,color }) => {
+const Img02 = ({background,color,title,list }) => {
 
 
   return (
     <div className="sc-Img02" style={{background:`${background}`, color:`${color}`}}>
-      <Title title={data.title} line={!data.line} />
+      <Title title={title} line={!data.line} />
 
       <div className="m-bd">
-        {data.list.map((item, i) => 
+        {list.map((item, i) => 
             i<=2&&(<div className="m-item" key={i}>
               <div className="m-img">
                 <img src={item.img} alt="" />

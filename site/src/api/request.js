@@ -1,8 +1,9 @@
-export default api =  async(url = '', data = {}, type = 'GET') => {
-    const baseUrl = "https://localhost:8000" // 基础路径
+const api =  async(url = '', data = {}, type = 'GET') => {
+    
+    const baseUrl = "http://localhost:8000" // 基础路径
     type = type.toUpperCase(); // 请求方式小写转换成大写
     url = baseUrl + url; // 请求地址的拼接
- 
+
     if (type === 'GET') {
         let dataStr = ''; //数据拼接字符串
         Object.keys(data).forEach(key => {
@@ -19,9 +20,10 @@ export default api =  async(url = '', data = {}, type = 'GET') => {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
+
         },
         mode: "cors", // 用来决定是否允许跨域请求  值有 三个 same-origin，no-cors（默认）以及 cores;
-        cache: "force-cache" // 是否缓存请求资源 可选值有 default 、 no-store 、 reload 、 no-cache 、 force-cache 或者 only-if-cached 。
+        cache: "no-cache" // 是否缓存请求资源 可选值有 default 、 no-store 、 reload 、 no-cache 、 force-cache 或者 only-if-cached 。
     }
  
     if (type === 'POST') {
@@ -37,3 +39,4 @@ export default api =  async(url = '', data = {}, type = 'GET') => {
         throw new Error(error)
     }
 }
+export default api

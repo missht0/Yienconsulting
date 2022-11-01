@@ -1,6 +1,92 @@
 .home{
     flex: 1 0 auto;
-    width: var(--clr-wid);
+    // width: var(--clr-wid);
+    max-width: 100%;
+    width: var(--clr-wid-2);
     background-color: var(--clr-back);
     margin: auto;
+    margin-top: 8rem;
+    & > .m-bk{
+        width: 100%;
+        & > .item{
+            position: relative;
+            background-color: white;
+
+            &  >img{
+                width: 100%;
+                height: 65rem;
+                z-index: -1;
+            }
+            & > .cnt{
+                transition: all 1s;
+                opacity: 0;
+
+                position: absolute;
+                left: 0;
+                z-index: 1;
+                top: 20%;
+                font-family: 'Lobster', cursive;
+                & > h3{
+                    font-size: 5rem;
+                    font-style: italic;
+                    color: var(--clr-main);
+                    font-weight: bold;
+                }
+                & > p{
+                    font-size: 3rem;
+                    color: var(--clr-main2);
+                }
+                & > li{
+                    margin-top: 0.5rem;
+                    font-size: 2rem;
+                    color: var(--clr-main);
+                }
+                & ::after{
+                    content: '';
+                    left: 0;
+                    transition: all 1s ease-out;
+                }
+                
+            }
+
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 30%;
+                right: 30%;
+                width: 0;
+                height: 0;
+                z-index: 0;
+                border-style: solid;
+                border-color: transparent;
+                border-width: 10rem 0 10rem 8rem;
+                transition: all 1s;
+
+            }
+            &:hover{
+
+                &  >img{
+                    // 去掉图片的滤镜
+                    filter: blur(3px) brightness(0.9); 
+
+
+                }
+                & > .cnt{
+                    opacity: 1;
+                    left: 10%;
+
+                }
+                &::after{
+                    right: 0;
+                    border-left-color: rgba(229, 229, 229, 0.2);
+                }
+            }
+        }
+    }
+    & > .Carousel{
+        width: 80%;
+        margin: auto;
+    }
+
 }

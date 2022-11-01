@@ -1,26 +1,40 @@
 import { React } from 'react';
+import Title from '@/assets/storybook/Title';
+
 import './index.scss'
 
-const data_p = {
-  img: "https://sports3.gtimg.com/community/7d862e25ced8463f9f0c8b25bdfcc143.jpeg/0",
-  data: {
-    des: "お知らせ",
-    title: "サイトカイン相談窓口",
-    cnt_g1: "06-6121-6103",
-    cnt_g2: "加齢に伴い私たちの身体は、しみ・しわ・たるみの増加、視力・聴力の低下、筋力や抵抗力の減少など、さまざまな老化サインを見せ始めます。",
-    cnt_g3: "受付時間 / 平日9:00 ~ 18:00",
-    line: 1,
-    hr: true,
-  },
-}
-const Footer = ({ data }) => {
+const Footer = (props) => {
+  if (props.data != null) console.log("footer", props.data);
   return (
     <>
 
       <footer>
         <div className="footer">
+          <div className="f-lt">
+            <Title title={props.data === null ? "" : props.data.bottom.title} />
+            <div className="partner">
+              {props.data === null ? "" : props.data.bottom.partner.map((item, index) => {
+                console.log("item", item);
+                return (
+                  <div key={index}>
+                    <a href={item[1]} ><img src={item[2]} alt={item[0]} /></a>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+          <div className="f-rt">
+            {props.data === null ? "" : props.data.bottom.list.map((item, index) => {
+              return (
+                <li key={index}>{item}</li>
+              )
+            })
+            }
+            <li >{props.data === null ? "" :props.data.bottom.address}</li>
 
+          </div>
         </div>
+
       </footer>
     </>
   )

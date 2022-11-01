@@ -1,71 +1,139 @@
 {
-    "homePage":{
-        "navigation":["关于我们","体检项目","医疗项目","医疗美容","联系我们","体检申请流程","合作伙伴一览"],
-        "Phyexam":{
-            "title":"体检项目",
-            "list":[
-                {
-                    "title":"六大套餐",
-                    "content":"一恩三大疾病豪华体检套餐、一恩癌症综合套餐、一恩癌、脑豪华体检套餐、一恩PETCT癌症专项体检、一恩PETCT癌+脑体检"
+    "homePage": {
+        "navigation": [
+            "体检项目",
+            "医疗项目",
+            "医疗美容",
+            "体检申请"
+        ],
+        "project": [
+            {
+                "title": "体检项目",
+                "cnt": {
+                    "title": "六大套餐",
+                    "content": [
+                        "一恩三大疾病豪华体检套餐",
+                        "一恩癌症综合套餐",
+                        "一恩癌、脑豪华体检套餐",
+                        "一恩PETCT癌症专项体检",
+                        "一恩PETCT癌+脑体检"
+                    ]
                 },
-                {
-                    "title":"体检流程",
-                    "content":"一恩PETCT癌+脑体检"
-                }
-            ]
-        },
-        "MedicalItems":{
-            "title":"医疗项目",
-            "list":[
-                {
-                    "title":"重离子技术",
-                    "content":"一恩PETCT癌+脑体检"
+                "item": [
+                    {
+                        "img": "https://mqcai.top/cdn/hpcom_article.jpg",
+                        "title": "测试文字g1测试文字g1测试文字g1",
+                        "cnt": "测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2",
+                        "btn": "了解详情",
+                        "link": "https://www.baidu.com"
+                    },
+                    {
+                        "img": "https://mqcai.top/cdn/hpcom_article.jpg",
+                        "title": "测试文字g1测试文字g1测试文字g1",
+                        "cnt": "测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2",
+                        "btn": "了解详情",
+                        "link": "https://www.baidu.com"
+                    },
+                    {
+                        "img": "https://mqcai.top/cdn/hpcom_article.jpg",
+                        "title": "测试文字g1测试文字g1测试文字g1",
+                        "cnt": "测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2",
+                        "btn": "了解详情",
+                        "link": "https://www.baidu.com"
+                    }
+                ]
+            },
+            {
+                "title": "医疗项目",
+                "cnt": {
+                    "title": "三大优势",
+                    "content": [
+                        "重离子技术",
+                        "权威医生",
+                        "尖端康复中心"
+                    ]
                 },
-                {
-                    "title":"权威医生",
-                    "content":"一恩PETCT癌+脑体检"
-                } ,  
-                {
-                    "title":"康复中心",
-                    "content":"一恩PETCT癌+脑体检"
+                "item": [
+                    {
+                        "img": "https://mqcai.top/cdn/hpcom_article.jpg",
+                        "title": "测试文字g1测试文字g1测试文字g1",
+                        "cnt": "测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2",
+                        "btn": "了解详情",
+                        "link": "https://www.baidu.com"
+                    },
+                    {
+                        "img": "https://mqcai.top/cdn/hpcom_article.jpg",
+                        "title": "测试文字g1测试文字g1测试文字g1",
+                        "cnt": "测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2",
+                        "btn": "了解详情",
+                        "link": "https://www.baidu.com"
+                    },
+                    {
+                        "img": "https://mqcai.top/cdn/hpcom_article.jpg",
+                        "title": "测试文字g1测试文字g1测试文字g1",
+                        "cnt": "测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2",
+                        "btn": "了解详情",
+                        "link": "https://www.baidu.com"
+                    }
+                ]
+            },
+            {
+                "title": "医疗美容",
+                "cnt": {
+                    "title": "四重关怀",
+                    "content": [
+                        "关心患者服务体验感",
+                        "关心患者医疗安全性",
+                        "关心患者最适合方案",
+                        "关心患者最佳效果"
+                    ]
                 },
-                {
-                    "title":"医疗流程",
-                    "content":"一恩PETCT癌+脑体检"
-                }
-            ]
-        },
-        "beautyClinic":{
-            "title":"医疗美容",
-            "list":[
-                {
-                    "title":"xxxxx",
-                    "content":"xxxxxxxxx"
-                },
-                {
-                    "title":"xxxxx",
-                    "content":"xxxxxxxxxxxx"
-                }
-            ]
-        },
-        "bottom":{
-            "title":"一恩赴日本医疗体检咨询中心",
-            "eng":"EN.COM",
-            "address":"京ICP备15039566号",
-            "list":[
-                {
-                    "title":"联系电话: ",
-                    "number":"0081-8058975168"
-                },
-                {
-                    "title":"联系人: ",
-                    "contacts":"贾城 园"
-                },{
-                    "title":"微信号: ",
-                    "vx":"wozaidongjing"
-                }
+                "item": [
+                    {
+                        "img": "https://mqcai.top/cdn/hpcom_article.jpg",
+                        "title": "测试文字g1测试文字g1测试文字g1",
+                        "cnt": "测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2",
+                        "btn": "了解详情",
+                        "link": "https://www.baidu.com"
+                    },
+                    {
+                        "img": "https://mqcai.top/cdn/hpcom_article.jpg",
+                        "title": "测试文字g1测试文字g1测试文字g1",
+                        "cnt": "测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2",
+                        "btn": "了解详情",
+                        "link": "https://www.baidu.com"
+                    },
+                    {
+                        "img": "https://mqcai.top/cdn/hpcom_article.jpg",
+                        "title": "测试文字g1测试文字g1测试文字g1",
+                        "cnt": "测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2",
+                        "btn": "了解详情",
+                        "link": "https://www.baidu.com"
+                    }
+                ]
+            }
+        ],
+        "bottom": {
+            "title": "一恩赴日本医疗体检咨询中心",
+            "eng": "EN.COM",
+            "address": "京ICP备15039566号",
+            "list": [
+                "联系电话：0081-8058975168",
+                "联系人：栗城 园",
+                "微信号：wozaidongjing"
+            ],
+            "partner": [
+                [
+                    "日本外苑东体检中心",
+                    "http://www.21miao.com/html/2017/wydy_0727/147.html",
+                    "http://www.21miao.com/uploadfile/2017/0517/20170517110626889.png"
+                ],
+                [
+                    "粒子线癌症治疗中心",
+                    "https://www.particle.or.jp/hirtjapan/cn/medical/about/",
+                    "https://www.particle.or.jp/hirtjapan/cn/images/logo.png"
+                ]
             ]
         }
     }
-
 }

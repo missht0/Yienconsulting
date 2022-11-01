@@ -1,14 +1,66 @@
 header{
+  position: fixed;
   flex: 0 0 auto;
-  position: absolute;
-  left: 0;
-
+  margin: auto;
+  z-index: 2;
+  opacity: 1;
 
   text-align: center;
-  width: 100vw;
-  min-height: 20rem;
+  // width: 98.5vw;
+  width: 100%;
+  height: 8rem;
   background-color: var(--clr-main);
   color: #fff;
   font-size: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & >.lan{
+    position: absolute;
+    right: 5rem;
+
+    height: 30%;
+    width: 10%;
+    background-color: var(--clr-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > .clan{
+      width: 80%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+
+  & >.header{
+
+    width: var(--clr-wid);
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: unset!important;
+
+
+    .ant-menu-item{
+      height: 90%;
+      width: calc(var(--clr-wid) / 7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: unset!important;
+      border-bottom: 0.5rem solid var(--clr-main)!important;
+      transition: all 0.3s ease-in-out ;
+    }
+    .ant-menu-item:hover{
+
+      background-color: unset!important;
+      border-bottom: 0.5rem solid white!important;
+    }
+  }
 
 }
