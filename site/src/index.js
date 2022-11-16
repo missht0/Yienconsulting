@@ -5,7 +5,7 @@ import App from './App'
 // https://github.com/ant-design/ant-design/issues/33327
 import 'antd/dist/antd.min.css'
 // 再导入全局样式文件，防止样式覆盖！
-import './index.scss'
+import './index.css'
 import './global.scss'
 
 

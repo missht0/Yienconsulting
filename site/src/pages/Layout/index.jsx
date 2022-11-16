@@ -12,8 +12,14 @@ const Layout = () => {
     const [data, setData] = useState(null)
     useEffect(() => {
         getdata().then(res => {
-            console.log("layout", res);
-            setData(res.homePage)
+            if(sessionStorage.getItem('lang')=="JP"){
+                setData(res.homePage2)
+            }
+            else{
+                setData(res.homePage)
+
+            }
+            
         })
     }, [])
     return (

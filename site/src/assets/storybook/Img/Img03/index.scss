@@ -29,9 +29,10 @@
       border-bottom: 2px solid #eee;
       & > .m-img {
         display: flex;
-        width: 30%;
+        width: 25%;
         img {
           width: 100%;
+          border-radius: 1rem;
         }
       }
 

@@ -2,40 +2,10 @@ import { Dropdown, Menu, Space } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { React } from 'react';
 import './index.scss'
+import { ThemeSelector } from '../ThemeSelector';
 const Header = (props) => {
   if (props.data != null) console.log("header", props.data);
 
-  const menu = (
-    <Menu
-      items={[
-        {
-          key: '1',
-          label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-              中文
-            </a>
-          ),
-        },
-        {
-          key: '2',
-          label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-              ENGLISH
-            </a>
-          ),
-        },
-        {
-          key: '3',
-          label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-              日本語
-            </a>
-          ),
-        },
-
-      ]}
-    />
-  );
   return (
     <header>
 
@@ -51,16 +21,8 @@ const Header = (props) => {
           }
         })}
       />
-            <div className="lan">
-        <Dropdown overlay={menu} className="clan">
-          <a onClick={e => e.preventDefault()}>
-
-            <Space>
-              LANGUAGE
-              <DownOutlined />
-            </Space>
-          </a>
-        </Dropdown>
+      <div className="lan relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
+        <ThemeSelector className="relative z-10 "/>
       </div>
     </header>
   )
